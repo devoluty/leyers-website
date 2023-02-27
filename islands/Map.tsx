@@ -18,7 +18,7 @@ const Map = () => {
   );
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyDNlb3bt_H1JjNyKmwNUXPSpP9sihRtkkc" as string,
+    googleMapsApiKey: "YOUR_API_KEY" as string,
     libraries: libraries as any,
   });
 
