@@ -1,5 +1,8 @@
 import { useLoadScript, GoogleMap, MarkerF } from "@react-google-maps/api";
 import { useMemo } from "react";
+require("dotenv").config();
+
+const googleApi = process.env.GOGLE_KEY_API;
 
 const Map = () => {
   const libraries = useMemo(() => ["places"], []);
@@ -18,7 +21,7 @@ const Map = () => {
   );
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "YOUR_API_KEY" as string,
+    googleMapsApiKey: googleApi as string,
     libraries: libraries as any,
   });
 
