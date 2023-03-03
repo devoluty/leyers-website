@@ -45,7 +45,7 @@ const Contact = () => {
 
           <div className="m-2 p-3">
             <button
-              className="bg-red-700 text-white rounded-md p-2 text-md"
+              className="bg-[#b8e8fc] text-black rounded-md p-2 text-md"
               type="submit"
             >
               Enviar mensaje
