@@ -14,7 +14,7 @@ const Map = () => {
     () => ({
       disableDefaultUI: false,
       clickableIcons: false,
-      scrollwheel: false,
+      scrollwheel: true,
     }),
     []
   );
@@ -29,21 +29,26 @@ const Map = () => {
   }
 
   return (
-    <div className="font-inter">
-      <GoogleMap
-        options={mapOptions}
-        zoom={15}
-        center={mapCenter}
-        mapTypeId={google.maps.MapTypeId.ROADMAP}
-        mapContainerStyle={{ width: "800px", height: "420px" }}
-        onLoad={() => console.log("Map Component Loaded...")}
-      >
-        <MarkerF
-          position={mapCenter}
-          onLoad={() => console.log("Marker Loaded")}
-        />
-      </GoogleMap>
-    </div>
+    <>
+      <div className="m-5 flex justify-center items-center">
+        <h1 className="font-epilogue font-bold text-3xl p-5">Conócenos</h1>
+      </div>
+      <div className="relative justify-center items-center flex">
+        <GoogleMap
+          options={mapOptions}
+          zoom={15}
+          center={mapCenter}
+          mapTypeId={google.maps.MapTypeId.ROADMAP}
+          mapContainerStyle={{ width: "940px", height: "490px" }}
+          onLoad={() => console.log("Map Component Loaded...")}
+        >
+          <MarkerF
+            position={mapCenter}
+            onLoad={() => console.log("Marker Loaded")}
+          />
+        </GoogleMap>
+      </div>
+    </>
   );
 };
 

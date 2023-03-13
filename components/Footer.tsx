@@ -1,37 +1,25 @@
-import Image from "next/image";
-
 const Footer = () => {
   return (
-    <>
-      <footer className="p-4 rounded-lg shadow m-[5%]">
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center mb-4 sm:mb-0"
-          >
-            <Image src={"/logo.png"} width={220} height={150} alt="logo" />
-          </a>
-          <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li>
-              <a href="/about" className="mr-4 hover:underline md:mr-6 ">
-                Acerca de
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:underline">
-                Contacto
-              </a>
-            </li>
-          </ul>
-        </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          <a href="/" className="hover:underline">
-            Instituo Leyer's
-          </a>
-        </span>
-      </footer>
-    </>
+    <footer className="">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="m-0 p-0"
+      >
+        <path
+          fill="#1e1e1e"
+          fill-opacity="1"
+          d="M0,96L17.1,106.7C34.3,117,69,139,103,138.7C137.1,139,171,117,206,122.7C240,128,274,160,309,192C342.9,224,377,256,411,256C445.7,256,480,224,514,224C548.6,224,583,256,617,245.3C651.4,235,686,181,720,160C754.3,139,789,149,823,160C857.1,171,891,181,926,202.7C960,224,994,256,1029,261.3C1062.9,267,1097,245,1131,234.7C1165.7,224,1200,224,1234,197.3C1268.6,171,1303,117,1337,117.3C1371.4,117,1406,171,1423,197.3L1440,224L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"
+        ></path>
+      </svg>
+      <div className="bg-[#1e1e1e] text-gray-100 py-6 text-center m-0 p-0">
+        <p className="text-sm font-bold">Our Enterprise Schedule</p>
+        <p className="text-xs mt-2">Monday - Saturday: 10:00 am - 14:00 pm</p>
+        <p className="text-xs mt-2">
+          © 2023 My Enterprise. All rights reserved.
+        </p>
+      </div>
+    </footer>
   );
 };
 
